@@ -1,0 +1,37 @@
+{
+  "name": "devconectorapp",
+  "version": "1.0.0",
+  "description": "app to conect developers",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Viraj Sawant",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "gravatar": "^1.8.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "mongoose": "^5.13.3",
+    "nodemon": "^2.0.12",
+    "passport": "^0.5.0",
+    "passport-jwt": "^4.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "simple-react-validator": "^1.6.1",
+    "validator": "^13.7.0"
+  }
+}
