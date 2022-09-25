@@ -32,6 +32,6 @@ app.use('/api/profile', profile);
 
 
 const port = 5000;
-app.listen(port, () => {
-    console.log(`listning at port ${port}`)
+app.listen(process.env.PORT || port, () => {
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
