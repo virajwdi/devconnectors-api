@@ -21,7 +21,7 @@ app.use(passport.initialize());
 app.use('/api/profile',profile); 
 app.use('/api/posts',posts);
 mongoose.connect(db).then((res) => { console.log("conenctted", res); }).catch((err) => { console.log("err ", err) });
-app.get('/',(req,res)=>{
+app.get('/api',(req,res)=>{
     res.send("welcome eeee")
 })
 
