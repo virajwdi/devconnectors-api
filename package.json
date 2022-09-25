@@ -9,7 +9,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "start": "concurrently \"npm run server\" \"npm run client\" ",
-    "heroku-postbuild": "nodemon server.js" 
+    "heroku-postbuild": "node server.js" 
   },
   "author": "Viraj Sawant",
   "license": "MIT",
