@@ -26,7 +26,7 @@ router.get(
         res.status(500).json(err);
       });
   }
-);
+); 
 // ------------ L O A D   R O U T E R -----------
 router.post(
   "/updateExperiance",

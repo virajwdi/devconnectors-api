@@ -23,7 +23,7 @@ router.post(
         console.log(err);
       });
   }
-);
+); 
 
 
 router.post("/getPostList", passport.authenticate("jwt", {session:false}), (req,res)=>{
